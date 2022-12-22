@@ -48,3 +48,13 @@ function filter_nav_menu_link_attributes( $atts, $item, $args, $depth ) {
 	return $atts;
 }
 // Добавляем классы ссылкам с классом active , то есть добавляем класс активной ссылке
+
+
+function car_setup(){
+    add_theme_support('post-thumbnails');
+    add_theme_support('title-tag');
+    add_theme_support('custom-logo');
+}
+
+
+add_action('after_setup_theme', 'car_setup');
